@@ -46,14 +46,14 @@
   <body>
     <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="">Andreas Iakobou</a>
+  <a class="navbar-brand" href="../" >Andreas Iakobou</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      <a class="nav-link" href="#">Instagram</a>
       <a class="nav-link" href="#">Resume</a>
+      <a class="nav-link" href="#">Instagram</a>
       <a class="nav-link active" href="">Blog</a>
 
     </div>
@@ -80,11 +80,11 @@
         <div class="row-full">
           <div class="card mb-4 shadow-sm">
               <a href=""><h3 class="text-left">{{ blog.title }}</h3></a>
-              <p class="text-left">{{ blog.date }}</p>
+              <p class="text-left">{{ blog.date_pretty }}</p>
               <br />
-            <a href=""><img class="img-fluid" src="{{ blog.image.url }}" height="400" width="400"/></a>
+            <a href=""><img class="img-fluid" src="{{ blog.image.url }}" height="300" width="300"/></a>
             <div class="card-body">
-              <p class="card-text">{{ blog.body }}</p>
+              <p class="card-text">{{ blog.summary }}</p>
             </div>
           </div>
         </div>
