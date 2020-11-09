@@ -32,6 +32,13 @@
         font-size: 3.5rem;
       }
     }
+
+    .img1 {
+    float: left;
+    width:  400px;
+    height: 300px;
+    background-size: cover;
+}
   </style>
 </head>
 
@@ -58,9 +65,9 @@
     <section class="jumbotron text-center">
       <div class="container">
         <h1>Hi, I'm Andy.</h1>
-        <p class="lead text-muted">My Name is Andreas Iakobou, and I am on my way of becoming a Python developer.
+        <p class="lead text-muted">My Name is Andreas Iakobou, and I am on my Way of Becoming a Python Developer.
         <br/>
-          Below, a collection of my recent projects.
+          Below, a Collection of my Recent Projects.
         </p>
         <p>
           <a href="mailto:a.iakobou@web.de" class="btn btn-primary my-2">Email me</a>
@@ -75,9 +82,9 @@
           {% for job in jobs.all %}
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img class="card-img-top img-fluid" src="{{ job.image.url }}" width="400" height="400"/>
+              <a href="{{ job.gitlink }}" target="_blank"><img class="card-img-top img-fluid img1" src="{{ job.image.url }}"/></a>
               <div class="card-body">
-                <p class="card-text">{{ job.summary }}</p>
+                <a href ="{{ job.gitlink }}" target="_blank">{{ job.summary }}</a>
               </div>
             </div>
           </div>
