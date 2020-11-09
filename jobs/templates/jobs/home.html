@@ -58,7 +58,10 @@
     <section class="jumbotron text-center">
       <div class="container">
         <h1>Hi, I'm Andy.</h1>
-        <p class="lead text-muted">My Name is Andreas Iakobou, and I am on my way of becoming a Python developer.</p>
+        <p class="lead text-muted">My Name is Andreas Iakobou, and I am on my way of becoming a Python developer.
+        <br/>
+          Below, a collection of my recent projects.
+        </p>
         <p>
           <a href="mailto:a.iakobou@web.de" class="btn btn-primary my-2">Email me</a>
         </p>
@@ -72,7 +75,7 @@
           {% for job in jobs.all %}
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="{{ job.image.url }}"/>
+              <img class="card-img-top img-fluid" src="{{ job.image.url }}" width="400" height="400"/>
               <div class="card-body">
                 <p class="card-text">{{ job.summary }}</p>
               </div>

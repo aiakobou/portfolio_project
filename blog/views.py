@@ -4,6 +4,7 @@ from .models import Blog
 
 def allblogs(request):
     blog = Blog.objects
+    #print(blog)
     return render(request, 'blog/allblogs.html', {'blog':blog})
 
 def detail(request, blog_id):
